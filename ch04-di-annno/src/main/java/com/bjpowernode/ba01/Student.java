@@ -10,6 +10,14 @@ import org.springframework.stereotype.Component;
  * 位置：在类的上面
  * @Component(value = "myStudent")等同于
  * <bean id="myStudent" class="com.bjpowernode.ba01.Student"/>
+ * <p>
+ * spring中和@Component功能一致，创建对象的注解还有：
+ * 1.@Repository（用在持久层类的上面）：放在dao的实现类上面
+ * 表示创建dao对象，dao对象是能访问数据库的
+ * 2.@Service（用在业务层类的上面）：放在service的实现类上面，
+ * 创建service对象，service对象是做业务处理的，可以有事务等功能的。
+ * 3.@Controller（用在控制器的上面）：放在控制器(处理器)类的上面，创建控制器对象的，
+ * 控制器对象，能够接受用户提交的参数，显示请求的处理结果。
  */
 //使用value属性，指定对象名称
 //@Component(value = "myStudent")
