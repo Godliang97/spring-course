@@ -33,7 +33,7 @@ public class MyAspect {
      *      1.在目标方法之后执行的
      *      2.能够获取到目标方法的返回值，可以根据这个返回值做不同的处理功能
      *          Object res = doOther();
-     *      3.可以修改这个返回指
+     *      3.可以修改这个返回值
      */
 
     @AfterReturning(value = "execution(* *..SomeServiceImpl.doOther(..))",
